@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>COMING SOON &bull; Mamun Abdu</title>
+
+  <!-- SEO & Social Open Graph Metadata -->
+  <meta name="description" content="Personal portfolio of Mamun Abdu. The rest is yet to render. Coming Soon 2026.">
+  <meta name="theme-color" content="#090514">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="COMING SOON &bull; Mamun Abdu">
+  <meta property="og:description" content="The rest is yet to render.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon: Native Inline SVG Pixel Hooded Avatar -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121822'/%3E%3Crect x='1' y='1' width='30' height='30' rx='4' fill='none' stroke='%23f5c452' stroke-width='1.2'/%3E%3Cpath d='M10 5h12v2H10zM8 7h16v4H8zM7 11h18v12H7z' fill='%231a202c'/%3E%3Cpath d='M10 10h12v11h-2v-8h-8v8h-2V10z' fill='%23080b11'/%3E%3Crect x='12' y='14' width='8' height='2' fill='%230a0d14'/%3E%3Crect x='12' y='16' width='8' height='5' fill='%23be866a'/%3E%3C/svg%3E">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Pixel & Sans-Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold-primary: #f5c452;
+      --gold-glow: rgba(245, 196, 82, 0.45);
+      --gold-border: rgba(245, 196, 82, 0.72);
+      --card-glass: rgba(18, 12, 32, 0.44);
+    }
+
+    * {
+      box-sizing: border-box;
+      image-rendering: pixelated;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      min-height: 100dvh;
+      background-color: #070312;
+      color: #f7f3ec;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .font-pixel {
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    .font-pixel-sub {
+      font-family: 'Silkscreen', monospace;
+    }
+
+    /* Enhanced Cinematic Twilight Color Grading */
+    .sky-gradient {
+      background: radial-gradient(
+        circle at 50% 85%,
+        #3c1669 0%,
+        #2a104f 35%,
+        #190933 65%,
+        #0a0417 90%,
+        #05020c 100%
+      );
+    }
+
+    /* True Glassmorphism Card: 44% opacity, warm amber rim lighting, clear voxel backdrop view */
+    .glass-card {
+      background: var(--card-glass);
+      backdrop-filter: blur(18px) saturate(155%);
+      -webkit-backdrop-filter: blur(18px) saturate(155%);
+      border: 1.5px solid var(--gold-border);
+      box-shadow: 
+        0 0 0 1px rgba(8, 4, 16, 0.9),
+        0 0 36px rgba(245, 196, 82, 0.2),
+        0 18px 54px rgba(0, 0, 0, 0.7),
+        0 36px 90px rgba(5, 2, 12, 0.9),
+        inset 0 1.5px 1px rgba(255, 240, 205, 0.35),
+        inset 0 -1.5px 1px rgba(0, 0, 0, 0.55);
+      transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.25s ease;
+    }
+
+    .glass-card:hover {
+      border-color: rgba(245, 196, 82, 0.95);
+      box-shadow: 
+        0 0 0 1px rgba(10, 6, 20, 0.95),
+        0 0 48px rgba(245, 196, 82, 0.3),
+        0 22px 64px rgba(0, 0, 0, 0.75),
+        0 40px 105px rgba(6, 2, 14, 0.95),
+        inset 0 1.5px 1px rgba(255, 245, 220, 0.45),
+        inset 0 -1.5px 1px rgba(0, 0, 0, 0.55);
+    }
+
+    /* Translucent Glass Avatar Frame with Gentle Ambient Pulse */
+    .glass-avatar-frame {
+      border: 1.5px solid rgba(245, 196, 82, 0.78);
+      background: rgba(14, 18, 28, 0.68);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 
+        0 0 0 1.5px rgba(6, 9, 16, 0.9),
+        0 0 24px rgba(245, 196, 82, 0.25),
+        0 8px 24px rgba(0, 0, 0, 0.65),
+        inset 0 1px 1px rgba(255, 255, 255, 0.28);
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .glass-avatar-frame:hover {
+      border-color: rgba(245, 196, 82, 0.95);
+      box-shadow: 
+        0 0 0 1.5px rgba(6, 9, 16, 0.95),
+        0 0 30px rgba(245, 196, 82, 0.38),
+        0 10px 28px rgba(0, 0, 0, 0.72),
+        inset 0 1px 1px rgba(255, 255, 255, 0.35);
+    }
+
+    /* Tactile Pixel CTA Button */
+    .pixel-cta-btn {
+      background: #e6a832;
+      color: #1a0f02;
+      border: 2px solid #140800;
+      box-shadow: 
+        inset 2px 2px 0 #fff0be,
+        inset -2px -2px 0 #9e5d03,
+        0 4px 0 #100500,
+        0 8px 20px rgba(0, 0, 0, 0.65);
+      transition: transform 0.12s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.12s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.15s ease;
+      text-decoration: none;
+      user-select: none;
+    }
+
+    .pixel-cta-btn:hover {
+      background: #f4b63e;
+      transform: translateY(-2px);
+      box-shadow: 
+        inset 2px 2px 0 #fff6cc,
+        inset -2px -2px 0 #b26b05,
+        0 6px 0 #100500,
+        0 14px 24px rgba(0, 0, 0, 0.75),
+        0 0 20px rgba(245, 196, 82, 0.35);
+    }
+
+    .pixel-cta-btn:active {
+      transform: translateY(3px);
+      box-shadow: 
+        inset 2px 2px 0 #854802,
+        inset -2px -2px 0 #fff0be,
+        0 1px 0 #100500;
+    }
+
+    /* Natural Lantern Flame Flicker with Ambient Light Cone */
+    @keyframes lanternGlow1 {
+      0%, 100% { opacity: 0.98; filter: drop-shadow(0 0 16px rgba(245, 196, 82, 0.98)); }
+      22% { opacity: 0.88; filter: drop-shadow(0 0 11px rgba(245, 196, 82, 0.78)); }
+      26% { opacity: 0.62; filter: drop-shadow(0 0 6px rgba(245, 196, 82, 0.45)); }
+      30% { opacity: 0.98; filter: drop-shadow(0 0 16px rgba(245, 196, 82, 0.98)); }
+      64% { opacity: 0.95; }
+      67% { opacity: 0.74; filter: drop-shadow(0 0 8px rgba(245, 196, 82, 0.58)); }
+      71% { opacity: 0.96; filter: drop-shadow(0 0 14px rgba(245, 196, 82, 0.88)); }
+    }
+
+    @keyframes lanternGlow2 {
+      0%, 100% { opacity: 0.94; filter: drop-shadow(0 0 13px rgba(245, 196, 82, 0.88)); }
+      16% { opacity: 0.58; filter: drop-shadow(0 0 5px rgba(245, 196, 82, 0.4)); }
+      19% { opacity: 0.96; filter: drop-shadow(0 0 13px rgba(245, 196, 82, 0.88)); }
+      52% { opacity: 0.92; }
+      55% { opacity: 0.68; filter: drop-shadow(0 0 7px rgba(245, 196, 82, 0.52)); }
+      58% { opacity: 0.96; }
+    }
+
+    .lantern-pulse-1 {
+      animation: lanternGlow1 4.8s infinite ease-in-out;
+    }
+
+    .lantern-pulse-2 {
+      animation: lanternGlow2 6.2s infinite ease-in-out 0.8s;
+    }
+
+    /* Ambient Warm Light Cast */
+    @keyframes lightConeBreathe {
+      0%, 100% { opacity: 0.16; }
+      50% { opacity: 0.10; }
+    }
+
+    .light-cast {
+      animation: lightConeBreathe 4.8s infinite ease-in-out;
+    }
+
+    /* Enderman Glowing Eyes Soft Pulse */
+    @keyframes enderEyesPulse {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #c084fc); }
+      50% { opacity: 0.35; filter: drop-shadow(0 0 1px #a855f7); }
+    }
+
+    .ender-glow {
+      animation: enderEyesPulse 3.6s infinite ease-in-out;
+    }
+
+    /* Circuit Trace Gentle Data Shimmer */
+    @keyframes circuitShimmer {
+      0%, 100% { opacity: 0.65; }
+      50% { opacity: 0.95; }
+    }
+
+    .circuit-pulse {
+      animation: circuitShimmer 5s infinite ease-in-out;
+    }
+
+    /* Multi-layered Pixel Cloud Drift */
+    @keyframes cloudDrift1 {
+      0% { transform: translateX(-30%); }
+      100% { transform: translateX(130%); }
+    }
+
+    @keyframes cloudDrift2 {
+      0% { transform: translateX(-20%); }
+      100% { transform: translateX(140%); }
+    }
+
+    .cloud-slow-1 {
+      animation: cloudDrift1 150s linear infinite;
+      will-change: transform;
+    }
+
+    .cloud-slow-2 {
+      animation: cloudDrift2 210s linear infinite -60s;
+      will-change: transform;
+    }
+
+    /* Parallax Layer Transitions */
+    .parallax-plane {
+      transition: transform 0.22s cubic-bezier(0.12, 0.45, 0.2, 1);
+      will-change: transform;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .parallax-plane {
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="sky-gradient text-neutral-100 selection:bg-amber-400 selection:text-black min-h-[100dvh] relative flex flex-col justify-between items-center px-4 sm:px-6 pt-[env(safe-area-inset-top,1rem)] pb-[env(safe-area-inset-bottom,1rem)]">
+
+  <!-- ================================================================= -->
+  <!-- LAYER 1: Starfield & Floating Warm Minecraft Embers Canvas        -->
+  <!-- ================================================================= -->
+  <canvas id="skyCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-0" aria-hidden="true"></canvas>
+
+  <!-- Distant Minecraft Pixel Clouds (Rich Twilight Purple Atmosphere) -->
+  <div class="fixed inset-x-0 top-[4%] sm:top-[6%] pointer-events-none z-0 opacity-60 overflow-hidden h-44" aria-hidden="true">
+    <svg class="cloud-slow-1 absolute top-1 w-80 sm:w-[440px] h-20" viewBox="0 0 140 28" fill="none">
+      <rect x="24" y="6" width="94" height="14" fill="#38185c"/>
+      <rect x="36" y="0" width="56" height="6" fill="#4d227d"/>
+      <rect x="0" y="14" width="140" height="10" fill="#2b1148"/>
+      <rect x="8" y="24" width="80" height="4" fill="#1f0a35"/>
+    </svg>
+    <svg class="cloud-slow-2 absolute top-12 w-64 sm:w-[360px] h-16" viewBox="0 0 110 22" fill="none">
+      <rect x="18" y="5" width="76" height="11" fill="#311352"/>
+      <rect x="30" y="0" width="40" height="5" fill="#451b72"/>
+      <rect x="0" y="11" width="110" height="8" fill="#230b3d"/>
+    </svg>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- LAYER 2: Highly Atmospheric Minecraft Voxel World                 -->
+  <!-- Clearly visible through the glass card with rich depth & lighting -->
+  <!-- ================================================================= -->
+  <div id="midgroundLayer" class="parallax-plane fixed inset-x-0 bottom-0 pointer-events-none z-0 flex flex-col items-center opacity-100" aria-hidden="true">
+    <svg class="w-full h-84 sm:h-[420px] md:h-[480px] lg:h-[530px]" preserveAspectRatio="none" viewBox="0 0 1440 440" fill="none">
+      
+      <!-- Far Stepped Mountains (Vibrant Violet / Horizon Haze) -->
+      <path d="M0,440 L0,220 L40,220 L40,195 L90,195 L90,170 L150,170 L150,145 L210,145 L210,120 L270,120 L270,155 L340,155 L340,180 L400,180 L400,145 L460,145 L460,110 L530,110 L530,145 L590,145 L590,180 L660,180 L660,135 L720,135 L720,105 L790,105 L790,150 L850,150 L850,185 L910,185 L910,125 L970,125 L970,95 L1040,95 L1040,135 L1110,135 L1110,170 L1170,170 L1170,130 L1230,130 L1230,100 L1300,100 L1300,145 L1370,145 L1370,180 L1440,180 L1440,440 Z" fill="#35165c"/>
+
+      <!-- Far Ridge Top Highlight Line -->
+      <path d="M40,195 h50 M90,170 h60 M150,145 h60 M210,120 h60 M460,110 h70 M720,105 h70 M970,95 h70 M1230,100 h70" stroke="#52258c" stroke-width="3"/>
+
+      <!-- LEFT HIGH CLIFF & OVERHANG TIMBER WITH HANGING LANTERN -->
+      <g fill="#271044">
+        <rect x="0" y="20" width="90" height="420"/>
+        <rect x="90" y="55" width="40" height="385"/>
+        <rect x="75" y="40" width="85" height="18" fill="#3e1a6a"/>
+        <!-- Iron Chain Links -->
+        <rect x="128" y="58" width="4" height="26" fill="#623a93"/>
+        <!-- Hanging Lantern Iron Casing -->
+        <rect x="119" y="84" width="22" height="7" fill="#1b0a30"/>
+        <rect x="121" y="112" width="18" height="5" fill="#1b0a30"/>
+        <rect x="119" y="91" width="3" height="21" fill="#1b0a30"/>
+        <rect x="138" y="91" width="3" height="21" fill="#1b0a30"/>
+      </g>
+      <!-- Hanging Lantern Glowing Core (Warm Golden Light) -->
+      <rect x="122" y="91" width="16" height="21" fill="#f5c452" class="lantern-pulse-1"/>
+      <!-- Soft ambient light cast on cliff wall -->
+      <rect x="70" y="65" width="54" height="75" fill="#f5c452" class="light-cast"/>
+
+      <!-- MINECRAFT CHARACTER (Sitting on Cliff Ledge Overlooking the Twilight World) -->
+      <g>
+        <!-- Head & Hair -->
+        <rect x="100" y="248" width="16" height="16" fill="#251810"/>
+        <rect x="103" y="252" width="12" height="10" fill="#ba846b"/>
+        <!-- Classic Blue Minecraft Shirt / Torso -->
+        <rect x="98" y="264" width="18" height="20" fill="#29638c"/>
+        <rect x="93" y="266" width="6" height="16" fill="#1d4868"/>
+        <!-- Dark Denim Pants / Sitting Legs Dropping Down -->
+        <rect x="98" y="284" width="20" height="9" fill="#1c2a47"/>
+        <rect x="111" y="293" width="9" height="16" fill="#141f36"/>
+        <!-- Gray Shoes -->
+        <rect x="111" y="309" width="10" height="6" fill="#110f17"/>
+      </g>
+
+      <!-- WATCHTOWER OUTPOST WITH ENDERMAN (Center-Left) -->
+      <g fill="#230d3e">
+        <rect x="240" y="95" width="50" height="130"/>
+        <rect x="230" y="80" width="70" height="16"/>
+        <!-- Crenellations -->
+        <rect x="230" y="66" width="14" height="14"/>
+        <rect x="258" y="66" width="14" height="14"/>
+        <rect x="286" y="66" width="14" height="14"/>
+        <!-- Timber Support Struts -->
+        <rect x="234" y="155" width="7" height="50"/>
+        <rect x="279" y="155" width="7" height="50"/>
+      </g>
+      <!-- Watchtower Glowing Windows -->
+      <rect x="256" y="110" width="14" height="16" fill="#f5c452" class="lantern-pulse-2"/>
+      <rect x="258" y="145" width="10" height="12" fill="#d99f36" opacity="0.85"/>
+
+      <!-- Enderman Standing on Tower Roof (Slender with glowing purple eyes) -->
+      <g fill="#0a0512">
+        <rect x="242" y="32" width="7" height="9"/>
+        <rect x="243" y="41" width="5" height="25"/>
+        <rect x="241" y="43" width="2" height="26"/>
+        <rect x="248" y="43" width="2" height="26"/>
+        <!-- Glowing Purple Enderman Eyes -->
+        <rect x="243" y="35" width="5" height="2" fill="#c084fc" class="ender-glow"/>
+      </g>
+
+      <!-- GRAND MINECRAFT CASTLE FORTRESS (Directly behind the glass card) -->
+      <!-- Softly visible through the card glass -->
+      <g fill="#210c3b">
+        <!-- Main Fortress Keep Walls -->
+        <rect x="660" y="95" width="120" height="130"/>
+        <rect x="646" y="80" width="148" height="16"/>
+        <!-- Battlements -->
+        <rect x="646" y="66" width="16" height="14"/>
+        <rect x="678" y="66" width="16" height="14"/>
+        <rect x="712" y="66" width="16" height="14"/>
+        <rect x="746" y="66" width="16" height="14"/>
+        <rect x="778" y="66" width="16" height="14"/>
+        <!-- High Fortress Spire -->
+        <rect x="732" y="34" width="30" height="34"/>
+        <rect x="728" y="24" width="38" height="10"/>
+        <rect x="742" y="10" width="10" height="14"/>
+      </g>
+      <!-- Warm Glowing Fortress Windows (Shining gently through the card glass) -->
+      <rect x="690" y="115" width="14" height="18" fill="#f5c452" class="lantern-pulse-1"/>
+      <rect x="746" y="128" width="11" height="14" fill="#e8ac36" opacity="0.95"/>
+      <rect x="742" y="42" width="10" height="11" fill="#f5c452" class="lantern-pulse-2"/>
+
+      <!-- Distant Player Silhouette on Fortress Battlement Walkway -->
+      <g fill="#0e051a" opacity="0.85">
+        <rect x="716" y="54" width="8" height="8"/>
+        <rect x="715" y="62" width="10" height="10"/>
+      </g>
+
+      <!-- RIGHT MINECRAFT SPIRE, OVERHANG TIMBER & CABIN -->
+      <g fill="#1d0a33">
+        <rect x="1190" y="80" width="65" height="140"/>
+        <rect x="1180" y="66" width="85" height="14"/>
+        <rect x="1195" y="54" width="55" height="12"/>
+        <rect x="1210" y="42" width="25" height="12"/>
+        <!-- Overhang Beam & Lantern -->
+        <rect x="1150" y="90" width="42" height="10" fill="#3c1964"/>
+        <rect x="1156" y="100" width="3" height="16" fill="#623a93"/>
+        <rect x="1149" y="116" width="16" height="5" fill="#1b0a30"/>
+        <rect x="1149" y="121" width="16" height="14" fill="#f5c452" class="lantern-pulse-1"/>
+        <rect x="1150" y="135" width="14" height="4" fill="#1b0a30"/>
+      </g>
+      <!-- Cabin Windows -->
+      <rect x="1216" y="104" width="14" height="16" fill="#f5c452" class="lantern-pulse-2"/>
+
+      <!-- Distant Creeper Silhouette in Mountain Shadow (Right Ground) -->
+      <g fill="#08030f" opacity="0.85">
+        <rect x="1110" y="260" width="12" height="12"/>
+        <rect x="1112" y="272" width="8" height="16"/>
+        <rect x="1110" y="288" width="12" height="7"/>
+        <rect x="1113" y="264" width="2" height="2" fill="#010003"/>
+        <rect x="1117" y="264" width="2" height="2" fill="#010003"/>
+      </g>
+
+      <!-- MIDGROUND STEPPED VOXEL HILLS & FORESTS -->
+      <path d="M0,440 L0,265 L70,265 L70,235 L135,235 L135,210 L195,210 L195,240 L275,240 L275,215 L335,215 L335,190 L385,190 L385,225 L455,225 L455,198 L515,198 L515,175 L585,175 L585,215 L655,215 L655,245 L745,245 L745,210 L805,210 L805,188 L875,188 L875,220 L955,220 L955,192 L1015,192 L1015,170 L1065,170 L1065,210 L1145,210 L1145,238 L1235,238 L1235,205 L1305,205 L1305,228 L1385,228 L1385,265 L1440,265 L1440,440 Z" fill="#1a0830"/>
+
+      <!-- Blocky Voxel Pine Trees on Ridges -->
+      <g fill="#100420">
+        <!-- Tree 1 -->
+        <rect x="160" y="185" width="12" height="26"/>
+        <rect x="151" y="171" width="30" height="15"/>
+        <rect x="157" y="157" width="18" height="14"/>
+        <rect x="162" y="145" width="8" height="12"/>
+        <!-- Tree 2 -->
+        <rect x="532" y="160" width="12" height="24"/>
+        <rect x="523" y="146" width="30" height="15"/>
+        <rect x="529" y="132" width="18" height="14"/>
+        <rect x="534" y="120" width="8" height="12"/>
+        <!-- Tree 3 -->
+        <rect x="1034" y="154" width="12" height="24"/>
+        <rect x="1025" y="140" width="30" height="15"/>
+        <rect x="1031" y="126" width="18" height="14"/>
+        <rect x="1036" y="114" width="8" height="12"/>
+      </g>
+
+      <!-- Stepped Ridges Pixel Rim Highlights -->
+      <path d="M70,235 h65 M135,210 h60 M275,215 h60 M335,190 h50 M455,198 h60 M515,175 h70 M745,210 h60 M805,188 h70 M955,192 h60 M1015,170 h50 M1235,205 h70" stroke="#401872" stroke-width="2.5"/>
+    </svg>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- LAYER 3: Foreground Minecraft Bedrock Ground Silhouette           -->
+  <!-- ================================================================= -->
+  <div id="foregroundLayer" class="parallax-plane fixed inset-x-0 bottom-0 pointer-events-none z-0 flex flex-col items-center opacity-100" aria-hidden="true">
+    <svg class="w-full h-16 sm:h-20 md:h-24" preserveAspectRatio="none" viewBox="0 0 1200 80" fill="none">
+      <path d="M0,80 L0,48 L60,48 L60,26 L130,26 L130,40 L200,40 L200,20 L280,20 L280,34 L370,34 L370,46 L460,46 L460,24 L550,24 L550,14 L640,14 L640,34 L730,34 L730,22 L820,22 L820,42 L910,42 L910,24 L990,24 L990,38 L1090,38 L1090,52 L1200,52 L1200,80 Z" fill="#0d0419"/>
+      <path d="M60,26 h70 M200,20 h80 M460,24 h90 M550,14 h90 M730,22 h90 M910,24 h80" stroke="#311157" stroke-width="2.5"/>
+    </svg>
+    <div class="w-full h-4 sm:h-6 bg-[#07010e] border-t border-[#1e0836]"></div>
+  </div>
+
+  <!-- Header Spacer -->
+  <header class="w-full h-2 sm:h-4 shrink-0 z-10" aria-hidden="true"></header>
+
+  <!-- ================================================================= -->
+  <!-- MAIN INTERFACE: Transparent Smoked Glass Coming Soon Panel        -->
+  <!-- Responsive across iPhone, Android, iPad, and Desktop              -->
+  <!-- ================================================================= -->
+  <main class="relative z-10 flex-1 flex flex-col items-center justify-center w-full max-w-[380px] sm:max-w-[420px] md:max-w-[440px] my-auto py-2 sm:py-4">
+
+    <!-- Crystal Clear Smoked Glass Card: Minecraft world shines through -->
+    <div class="glass-card rounded-2xl sm:rounded-3xl px-6 sm:px-8 py-7 sm:py-9 w-full flex flex-col items-center text-center">
+      
+      <!-- AVATAR: EXACT 1:1 RECREATION OF Mamun_Pfp_3.png (Native Inline SVG) -->
+      <div class="mb-4 sm:mb-5 transition-transform duration-300 hover:scale-105">
+        <div class="glass-avatar-frame w-[68px] h-[68px] sm:w-[74px] sm:h-[74px] rounded-xl overflow-hidden flex items-center justify-center p-0.5">
+          <svg 
+            class="w-full h-full rounded-[9px]" 
+            viewBox="0 0 32 32" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Mamun Abdu Pixel Avatar"
+            role="img"
+          >
+            <!-- Canvas dark slate grid background from original PNG -->
+            <rect width="32" height="32" fill="#141a24"/>
+
+            <!-- Subtle developer grid lines authentic to Mamun_Pfp_3.png -->
+            <path d="M0 8h32v1H0zM0 16h32v1H0zM0 24h32v1H0zM8 0h1v32H8zM16 0h1v32h-1zM24 0h1v32h-1z" fill="#1c2432" opacity="0.38"/>
+
+            <!-- Developer cyan circuit traces with square pads (exact geometry from reference PNG) -->
+            <!-- Top left trace -->
+            <g class="circuit-pulse">
+              <path d="M0 6h8v1H0zM8 3h1v4H8zM9 3h7v1H9z" fill="#2d7e93"/>
+              <rect x="8" y="2" width="2" height="2" fill="#48b2ca"/>
+              <!-- Mid left horizontal trace with pad -->
+              <path d="M0 16h6v1H0z" fill="#2d7e93"/>
+              <rect x="5" y="15" width="2" height="2" fill="#48b2ca"/>
+              <!-- Lower left trace -->
+              <path d="M0 24h5v1H0z" fill="#2d7e93" opacity="0.8"/>
+
+              <!-- Top right trace branching down -->
+              <path d="M25 0h1v6h-1zM25 6h7v1h-7z" fill="#2d7e93"/>
+              <path d="M26 6h1v7h-1zM27 12h5v1h-5z" fill="#2d7e93"/>
+              <!-- Mid right trace with square pad node -->
+              <rect x="28" y="14" width="2" height="2" fill="#48b2ca"/>
+              <path d="M27 19h5v1h-5z" fill="#2d7e93"/>
+              <rect x="26" y="18" width="2" height="2" fill="#48b2ca"/>
+              <!-- Lower right circuit loop -->
+              <path d="M29 20h1v7h-1zM24 27h6v1h-6z" fill="#2d7e93" opacity="0.75"/>
+            </g>
+
+            <!-- HOOD SILHOUETTE (Exact geometric proportions of Mamun_Pfp_3.png) -->
+            <!-- Outer Hoodie Dark Charcoal Base -->
+            <path d="M12 4h8v2h-8zM10 6h12v2H10zM8 8h16v4H8zM7 12h18v11H7z" fill="#1a202c"/>
+            
+            <!-- Lower Torso & Hoodie Shoulders -->
+            <path d="M3 23h26v9H3z" fill="#141923"/>
+            <!-- Shoulder shadow seams -->
+            <path d="M3 23h3v9H3zM26 23h3v9h-3z" fill="#0f131b"/>
+
+            <!-- Hood volumetric highlights & shadows -->
+            <rect x="13" y="4" width="6" height="1" fill="#2c3647"/>
+            <rect x="11" y="5" width="2" height="1" fill="#252f40"/>
+            <rect x="19" y="5" width="2" height="1" fill="#252f40"/>
+            <rect x="9" y="7" width="1" height="4" fill="#232c3c"/>
+            <rect x="8" y="11" width="1" height="9" fill="#1e2736"/>
+            <rect x="23" y="11" width="1" height="9" fill="#151b26"/>
+
+            <!-- Hood Inner Cavity: Deep dark shadow enclosing upper face -->
+            <path d="M10 10h12v12h-2v-9h-8v9h-2V10z" fill="#080b11"/>
+            <path d="M11 11h10v4h-10z" fill="#05080e"/>
+
+            <!-- Deep Forehead Cast Shadow (Band directly above skin) -->
+            <rect x="12" y="14" width="8" height="2" fill="#0a0e16"/>
+
+            <!-- WARM FACE / SKIN TONE (Exact palette #be866a & authentic chin steps) -->
+            <rect x="12" y="16" width="8" height="5" fill="#be866a"/>
+            <!-- Cheek step insets (classic rounded pixel curve) -->
+            <rect x="12" y="16" width="1" height="1" fill="#1b212d"/>
+            <rect x="19" y="16" width="1" height="1" fill="#1b212d"/>
+            <!-- Chin bottom bevel shading -->
+            <rect x="13" y="20" width="6" height="1" fill="#a46f56"/>
+            <rect x="12" y="20" width="1" height="1" fill="#0f131b"/>
+            <rect x="19" y="20" width="1" height="1" fill="#0f131b"/>
+
+            <!-- Hoodie Center Zipper/Seam & Drawstring Details -->
+            <path d="M15 22h2v10h-2z" fill="#0d1117"/>
+            <rect x="14" y="23" width="1" height="6" fill="#263140"/>
+            <rect x="17" y="23" width="1" height="6" fill="#263140"/>
+            <rect x="14" y="28" width="1" height="1" fill="#3a4a60"/>
+            <rect x="17" y="28" width="1" height="1" fill="#3a4a60"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- MAIN HEADING: COMING SOON (EXACT TEXT) -->
+      <h1 class="font-pixel text-xl sm:text-2xl md:text-[26px] leading-tight tracking-wider text-[#fffbf0] mb-3 drop-shadow-[0_3px_12px_rgba(0,0,0,0.95)]">
+        COMING SOON
+      </h1>
+
+      <!-- DESCRIPTION: The rest is yet to render. (EXACT TEXT) -->
+      <p class="text-sm sm:text-[15px] text-[#cfbfeb] font-normal leading-relaxed max-w-xs mb-6 antialiased">
+        The rest is yet to render.
+      </p>
+
+      <!-- CONTACT SECTION: Strictly ONE action -->
+      <div class="w-full flex flex-col items-center">
+        
+        <!-- CONTACT LABEL: REACH ME HERE (EXACT TEXT) -->
+        <span class="font-pixel-sub text-[10px] sm:text-[11px] tracking-[0.24em] text-[#f5c452] uppercase mb-2.5 opacity-95">
+          REACH ME HERE
+        </span>
+
+        <!-- PRIMARY BUTTON: SAY HELLO → (EXACT TEXT) -->
+        <!-- Direct semantic mailto link invoking default email handler -->
+        <a 
+          id="sayHelloBtn" 
+          href="mailto:hello@mamunabdu.pro.bd?subject=Hello%20Mamun" 
+          class="pixel-cta-btn font-pixel-sub px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg text-xs sm:text-[13px] tracking-wider flex items-center justify-center gap-2 w-full max-w-[240px] text-center"
+          title="Send email to hello@mamunabdu.pro.bd"
+        >
+          <span>SAY HELLO &rarr;</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- FOOTER: UNTIL THEN · 2026 (EXACT TEXT)                            -->
+  <!-- ================================================================= -->
+  <footer class="relative z-10 w-full px-4 py-3 shrink-0 flex items-center justify-center text-center">
+    <p class="font-pixel-sub text-[10px] sm:text-[11px] text-[#9378b2] tracking-widest">
+      UNTIL THEN &middot; 2026
+    </p>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- CLIENT SCRIPT: Dynamic Starfield, Ambient Embers & Parallax       -->
+  <!-- ================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      // 1. Procedural Celestial Canvas: Twinkling Square Stars & Floating Warm Embers
+      const canvas = document.getElementById('skyCanvas');
+      const ctx = canvas.getContext('2d');
+      let width = 0;
+      let height = 0;
+      const stars = [];
+      const embers = [];
+
+      function setupCanvas() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        // Twinkling Minecraft night stars
+        stars.length = 0;
+        const starCount = Math.floor(Math.min(width, 1400) / 24);
+        for (let i = 0; i < starCount; i++) {
+          stars.push({
+            x: Math.random() * width,
+            y: Math.random() * (height * 0.72),
+            size: Math.random() > 0.82 ? 2 : 1,
+            speed: 0.7 + Math.random() * 1.6,
+            phase: Math.random() * Math.PI * 2
+          });
+        }
+
+        // Ambient floating embers (warm amber & twilight violet dust)
+        embers.length = 0;
+        const emberCount = 18;
+        for (let i = 0; i < emberCount; i++) {
+          embers.push({
+            x: Math.random() * width,
+            y: height * 0.35 + Math.random() * (height * 0.6),
+            size: Math.random() > 0.65 ? 2 : 1.5,
+            vy: -(0.2 + Math.random() * 0.28),
+            vx: (Math.random() - 0.5) * 0.16,
+            opacity: 0.25 + Math.random() * 0.4,
+            color: Math.random() > 0.32 ? '245, 196, 82' : '205, 155, 255'
+          });
+        }
+      }
+
+      function render() {
+        ctx.clearRect(0, 0, width, height);
+        const now = Date.now() * 0.001;
+
+        // Twinkling square stars
+        for (let i = 0; i < stars.length; i++) {
+          const s = stars[i];
+          const brightness = 0.25 + 0.68 * (0.5 + 0.5 * Math.sin(now * s.speed + s.phase));
+          ctx.fillStyle = 'rgba(244, 235, 255, ' + brightness + ')';
+          ctx.fillRect(Math.floor(s.x), Math.floor(s.y), s.size, s.size);
+        }
+
+        // Floating ambient embers
+        for (let i = 0; i < embers.length; i++) {
+          const e = embers[i];
+          e.y += e.vy;
+          e.x += e.vx;
+
+          if (e.y < height * 0.1) {
+            e.y = height * 0.9;
+            e.x = Math.random() * width;
+          }
+
+          ctx.fillStyle = 'rgba(' + e.color + ', ' + e.opacity + ')';
+          ctx.fillRect(Math.floor(e.x), Math.floor(e.y), e.size, e.size);
+        }
+
+        requestAnimationFrame(render);
+      }
+
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (!prefersReduced.matches) {
+        setupCanvas();
+        render();
+      } else {
+        setupCanvas();
+        ctx.clearRect(0, 0, width, height);
+        for (let i = 0; i < stars.length; i++) {
+          const s = stars[i];
+          ctx.fillStyle = 'rgba(244, 235, 255, 0.45)';
+          ctx.fillRect(Math.floor(s.x), Math.floor(s.y), s.size, s.size);
+        }
+      }
+
+      // 2. Gentle Desktop Parallax (Smooth & subtle, disabled on touch/mobile)
+      const midLayer = document.getElementById('midgroundLayer');
+      const foreLayer = document.getElementById('foregroundLayer');
+
+      if (!prefersReduced.matches && window.matchMedia('(pointer: fine)').matches) {
+        let mouseX = 0;
+        let targetX = 0;
+
+        window.addEventListener('mousemove', function (e) {
+          targetX = (e.clientX / window.innerWidth) * 2 - 1;
+        }, { passive: true });
+
+        function updateParallax() {
+          mouseX += (targetX - mouseX) * 0.04;
+          if (midLayer) midLayer.style.transform = 'translate3d(' + (mouseX * -9) + 'px, 0, 0)';
+          if (foreLayer) foreLayer.style.transform = 'translate3d(' + (mouseX * -16) + 'px, 0, 0)';
+          requestAnimationFrame(updateParallax);
+        }
+        updateParallax();
+      }
+
+      // Debounced resize
+      let resizeTimeout;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(setupCanvas, 150);
+      }, { passive: true });
+
+    })();
+  </script>
+</body>
+</html>
