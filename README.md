@@ -1,5 +1,3 @@
 # mamunabdu
 
-Personal site — mamunabdu.com
-
-
+Personal site for mamunabdu.com.
